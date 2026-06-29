@@ -49,7 +49,7 @@ class Evaluator {
                     case COSINE -> Math.cos(arg);
                     case TANGENT -> Math.tan(arg);
                     case COTANGENT -> 1/Math.tan(arg);
-                    default -> {throw new RuntimeException("Evaluate: Unknown trigonometric function");}
+                    default -> throw new RuntimeException("Evaluate: Unknown trigonometric function");
                 };
             }
 
